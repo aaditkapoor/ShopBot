@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>{{ userid }}</title>
+</head>
+<body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+<center>
+      <div class="jumbotron">
+<h1>Hi! I am ShopBot! I show you all the cool products and help you to decide</h1>
+          <hr>
+
+	<b>Showing user ID: {{ userid }}</b>
+	<hr>
+	        <p class="lead">I help you in all the cases.</p>
+
+
+	{% for i in data %}
+<ul>
+
+
+	<b> {{ i }} </b>
+
+
+	{% endfor %}
+</ul>
+
+
+
+	<center>&copy ShopBot 2016</center>
+
+      </div>
+     </center>
+</body>
+</html>
